@@ -1,0 +1,41 @@
+@mixin btn-style ($font)
+  font-weight: 400
+  font-size: $font
+  line-height: 114%
+  text-transform: uppercase
+  color: #ffffff
+  background: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%)
+  box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+  border: 0
+  border-radius: 4px
+  &:hover
+    background: #1EACC7
+    box-shadow: none
+
+@mixin name-mod($bg, $color)
+  width: 115px
+  height: 27px
+  font-weight: 400
+  font-size: 11px
+  line-height: 11px
+  display: flex
+  align-items: center
+  justify-content: center
+  text-transform: uppercase
+  color: $color
+  background-color: $bg
+
+@mixin title-mod($font, $color)
+  font-weight: 700
+  font-size: $font
+  line-height: 100%
+  text-align: center
+  text-transform: uppercase
+  color: $color
+
+@mixin subtitle-mod($font, $color)
+  text-align: center
+  font-weight: 400
+  font-size: $font
+  line-height: 100%
+  color: $color
